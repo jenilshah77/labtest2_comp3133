@@ -1,59 +1,52 @@
-# 101411341LabTest2Comp3133
+SpaceX Mission Dashboard
+Overview
+The SpaceX Mission Dashboard is a modern web application designed to display detailed information about SpaceX missions in an interactive and visually appealing format. This app allows users to explore various missions, view detailed information about each mission, and filter missions based on different criteria, such as mission status, launch year, and more. The application features a clean, responsive design with smooth animations and an intuitive user interface.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+Features
+Mission Cards: Display a grid of SpaceX mission cards with key information like mission title, launch year, and mission status.
 
-## Development server
+Filter Functionality: Users can filter missions by launch year and mission status (successful, failed, etc.).
 
-To start a local development server, run:
+Interactive Hover Effects: Hovering over mission cards triggers a subtle animation, improving the user experience.
 
-```bash
-ng serve
-```
+Responsive Design: The layout adjusts to various screen sizes, providing an optimal experience across devices, including desktop, tablet, and mobile.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Mission Details: Clicking on a mission card reveals expanded details about the mission, including mission patch, launch details, and status.
 
-## Code scaffolding
+Technology Stack
+Frontend:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+HTML5
 
-```bash
-ng generate component component-name
-```
+CSS3 (Flexbox, Grid)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+JavaScript (ES6+)
 
-```bash
-ng generate --help
-```
+Angular (or whichever frontend framework you're using)
 
-## Building
+Google Fonts (Roboto, Poppins for modern typography)
 
-To build the project run:
+Other Libraries/Tools:
 
-```bash
-ng build
-```
+CSS Preprocessor (optional, e.g., SASS or LESS)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Version Control: Git
 
-## Running unit tests
+Package Manager: npm (for managing dependencies)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Usage
+Once the app is running, you can interact with it as follows:
 
-```bash
-ng test
-```
+Mission Cards: The dashboard displays a grid of mission cards. Each card provides information such as the mission title, launch year, and mission status. The cards are organized in a responsive grid layout.
 
-## Running end-to-end tests
+Filter Functionality: The app features a filter section where users can select mission attributes to filter results. Available filters include:
 
-For end-to-end (e2e) testing, run:
+Launch Year
 
-```bash
-ng e2e
-```
+Mission Status (e.g., Successful, Failed)
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+When a filter is applied, the mission grid updates to show only the missions that match the selected criteria.
 
-## Additional Resources
+Mission Details: Clicking on a mission card opens an expanded view that displays more detailed information about the mission, such as the mission patch, launch date, and mission outcome. The details section is organized into clear sections for better readability.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Responsive Design: The dashboard is fully responsive, ensuring the layout adjusts seamlessly across different screen sizes, from desktop to mobile devices.
