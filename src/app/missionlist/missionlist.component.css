@@ -1,0 +1,160 @@
+.missions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Adjusted min width */
+    gap: 24px; /* Increased gap */
+}
+
+.mission-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.mission-card:hover {
+    transform: translateY(-6px); /* Increased hover effect */
+    transition: transform 0.4s ease-in-out; /* Smooth transition */
+}
+
+.mission-header {
+    background-color: #e9ecef; /* Slightly lighter background */
+    padding: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission-patch {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.mission-title-container {
+    width: 100%;
+    text-align: center;
+}
+
+.mission-title-container mat-card-title {
+    color: #003366; /* Darker blue */
+    margin: 0;
+    font-size: 1.3em; /* Slightly larger font */
+    font-weight: 600; /* Slightly lighter weight */
+    display: block;
+}
+
+.mission-title-container mat-card-subtitle {
+    color: #777; /* Lighter grey */
+    margin: 6px 0;
+    font-size: 1em;
+    display: block;
+}
+
+.mission-basic-info {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.launch-year {
+    color: #003366; /* Darker blue */
+    font-weight: 600; /* Bold font */
+    margin: 0 0 10px 0;
+}
+
+.mission-details {
+    color: #777; /* Lighter grey */
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+.mission-status {
+    padding: 0 20px 20px;
+}
+
+.chips-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.chips-container mat-chip.success {
+    background-color: #28a745;
+    color: white;
+    border-radius: 20px; /* Rounded chips */
+}
+
+.chips-container mat-chip.failed {
+    background-color: #d9534f;
+    color: white;
+    border-radius: 20px; /* Rounded chips */
+}
+
+.card-footer {
+    padding: 0 20px 20px;
+    margin-top: auto;
+}
+
+.view-details-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.4s ease;
+    border-radius: 5px; /* More rounded button */
+}
+
+.view-details-btn:hover {
+    background-color: #002244; /* Darker shade on hover */
+}
+
+.mission-details-expanded {
+    background-color: #f1f3f5; /* Lighter background */
+    border-top: 1px solid #ccc; /* Lighter border */
+}
+
+.details-section {
+    margin-bottom: 20px;
+}
+
+.details-section h3 {
+    color: #003366; /* Darker blue */
+    margin: 0 0 12px 0;
+    font-size: 1.2em;
+}
+
+.details-section p {
+    margin: 6px 0;
+    color: #777; /* Lighter grey */
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Increased minimum column width */
+    gap: 12px;
+}
+
+.links-grid a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #0056b3; /* Link color */
+}
+
+.links-grid a:hover {
+    color: #003366; /* Darker blue on hover */
+}
+
+mat-card-actions {
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+}

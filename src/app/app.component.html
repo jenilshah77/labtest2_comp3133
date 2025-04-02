@@ -1,0 +1,41 @@
+<div class="container">
+  <h1 class="main-title">COMP3133 || Lab Test-2 || SpaceX API</h1>
+  
+  <div class="filters-section">
+    <div class="filter-row">
+      <div class="filter-group">
+        <label for="yearFilter">Filter by Launch Year:</label>
+        <input type="text" id="yearFilter" [(ngModel)]="yearFilter" placeholder="Enter year (e.g., 2020)">
+      </div>
+      
+      <div class="filter-group">
+        <label>Launch Status:</label>
+        <select [(ngModel)]="launchStatus">
+          <option value="">All Launches</option>
+          <option value="success">Successful</option>
+          <option value="failed">Failed</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Landing Status:</label>
+        <select [(ngModel)]="landingStatus">
+          <option value="">All Landings</option>
+          <option value="success">Successful</option>
+          <option value="failed">Failed</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="filter-actions">
+      <button class="filter-btn" (click)="applyFilters()">Apply Filters</button>
+      <button class="reset-btn" (click)="resetFilters()">Reset Filters</button>
+    </div>
+  </div>
+
+  <app-missionlist 
+    [yearFilter]="yearFilter"
+    [launchStatus]="launchStatus"
+    [landingStatus]="landingStatus">
+  </app-missionlist>
+</div>
